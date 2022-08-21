@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        padding: 0;
+        margin: 0;
+        background: rgb(2,0,36);
+        background: linear-gradient(342deg, rgba(2,0,36,1) 0%, rgba(19,60,85,1) 35%, rgba(0,212,255,1) 100%);
+    }
+}
+
+@layer components {
+    .grid-container--fill {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .description {
+        left: calc(50% - 118px)
+    }
+
+    #about-decription {
+        margin: 20px !important;
+    }
+}
